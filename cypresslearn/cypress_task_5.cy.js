@@ -1,4 +1,4 @@
-/////<reference types="cypress" />
+////<reference types="cypress" />
 
 describe("Payment", () => {
   it("Should Success Pay Bill", () => {

@@ -1,9 +1,6 @@
 ////<reference types="cypress" />
 
 describe("Swag labs test", () => {
-  beforeEach(() => {
-    cy.visit("https://www.saucedemo.com/");
-  });
 
   it("should login to application with valid data", () => {
     cy.fixture("user").then((user) => {
@@ -11,7 +8,7 @@ describe("Swag labs test", () => {
     });
   });
 
-  it.only("successful purchase", () => {
+  it("successful purchase", () => {
     cy.fixture("user").then((user) => {
       cy.login(user.username2, user.password2);
     });
